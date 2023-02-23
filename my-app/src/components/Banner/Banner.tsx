@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
-import headerImg from "../../assets/img/DVD_logo.svg";
+import headerImg from "../../images/DVD_logo.svg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import css from './Banner.module.css';
+import './Banner.css';
 
 const Banner = () => {
   const toRotate = ['Front Dev', 'React Developer', 'Web Developer'];
@@ -45,7 +45,7 @@ const Banner = () => {
   });
 
   return (
-    <section className={css.banner} id="home">
+    <section className='banner' id="home">
       <Container>
         <Row className="align-items-center">
           <Col

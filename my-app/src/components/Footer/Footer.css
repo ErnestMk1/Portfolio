@@ -1,0 +1,28 @@
+.footer {
+  background-image: url('../../images/footer-bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 20vh;
+}
+
+.row {
+  align-items: center;
+}
+
+.footer .footer_logo {
+  width: 26%;
+}
+
+.container_footer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (orientation: portrait) and (max-width: 750px) {
+  .text-center {
+    margin-top: 3vh;
+  }
+}
