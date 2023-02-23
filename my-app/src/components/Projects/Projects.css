@@ -32,7 +32,11 @@
   width: 50vw;
   height: 50vh;
   cursor: pointer;
+}
 
+.project-card_link {
+  color: #FFF !important;
+  text-decoration: none;
 }
 
 .proj-imgbx::before {

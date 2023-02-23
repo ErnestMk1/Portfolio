@@ -1,22 +1,19 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Banner from './components/Banner/Banner';
-import Contact from './components/Contact/Contact';
-import Footer from './components/Footer/Footer';
-import NavBar from './components/NavBar/NavBar';
-import Projects from './components/Projects/Projects';
-import Skills from './components/Skills/Skills';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import MainComponent from './components/MainComponent';
+import ProjectPresentation from './components/Projects/ProjectPresentation';
 
 const App = () => {
   return (
-    <div>
-      <NavBar />
-      <Banner />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
-    </div>
+    <>
+      <Router>
+        <Routes>
+          <Route path="/projects/:id" element={ <ProjectPresentation /> } />
+          <Route path="/" element={ <MainComponent /> } />
+        </Routes>
+      </Router>
+    </>
   );
 };
 

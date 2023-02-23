@@ -11,6 +11,8 @@ import typescript from '../../images/typescript.svg';
 import responsive_web from '../../images/responsive_web.svg';
 import git from '../../images/git.svg';
 import github from '../../images/github_gray.svg';
+import boostrap from '../../images/bootstrap.svg';
+import rest_api from '../../images/rest_api.svg';
 
 const Skills = () => {
   const responsive = {
@@ -88,6 +90,16 @@ const Skills = () => {
                   <div>
                     <img src={github} alt="github"/>
                     <h5>Github</h5>
+                  </div>
+                  <div>
+                    <img src={boostrap} alt="boostrap" />
+                    <h5>Bootstrap</h5>
+                  </div>
+                </div>
+                <div className="item">
+                  <div>
+                    <img src={rest_api} alt="restful api"/>
+                    <h5>RESTful API</h5>
                   </div>
                 </div>
               </Carousel>
