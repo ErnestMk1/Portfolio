@@ -2,8 +2,22 @@ import { useState, useRef } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import contactImg from '../../images/contact-img.svg';
 import './Contact.css';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const formRef = useRef();
+
+  // const sendEmail = (e: any) => {
+  //   e.preventDefault();
+
+  //   emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formRef.current, 'YOUR_PUBLIC_KEY')
+  //     .then((result) => {
+  //         console.log(result.text);
+  //     }, (error) => {
+  //         console.log(error.text);
+  //     });
+  // };
+
   const formInitialDetails = {
     firstName: '',
     lastName: '',

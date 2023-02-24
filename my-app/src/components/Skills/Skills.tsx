@@ -13,6 +13,7 @@ import git from '../../images/git.svg';
 import github from '../../images/github_gray.svg';
 import boostrap from '../../images/bootstrap.svg';
 import rest_api from '../../images/rest_api.svg';
+import mysql from '../../images/mysql.svg';
 
 const Skills = () => {
   const responsive = {
@@ -100,6 +101,10 @@ const Skills = () => {
                   <div>
                     <img src={rest_api} alt="restful api"/>
                     <h5>RESTful API</h5>
+                  </div>
+                  <div>
+                    <img src={mysql} alt="mysql database"/>
+                    <h5>MySql</h5>
                   </div>
                 </div>
               </Carousel>
