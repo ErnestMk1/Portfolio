@@ -1,11 +1,13 @@
 {
   "files": {
-    "main.css": "/portfolio_recreation/static/css/main.3ede87d4.css",
-    "main.js": "/portfolio_recreation/static/js/main.2d0b8445.js",
+    "main.css": "/portfolio_recreation/static/css/main.3078eb07.css",
+    "main.js": "/portfolio_recreation/static/js/main.38542536.js",
     "static/js/787.28cb0dcd.chunk.js": "/portfolio_recreation/static/js/787.28cb0dcd.chunk.js",
+    "static/media/project_bg.jpg": "/portfolio_recreation/static/media/project_bg.8e326f70e59c8e25979e.jpg",
     "static/media/todo_app.png": "/portfolio_recreation/static/media/todo_app.ff165a05f797a10cafbb.png",
     "static/media/great_change.png": "/portfolio_recreation/static/media/great_change.f523bc9bf9594a22ecf5.png",
     "static/media/banner-bg.png": "/portfolio_recreation/static/media/banner-bg.cc1273af450504afe755.png",
+    "static/media/register.png": "/portfolio_recreation/static/media/register.d7df6aef28ed1e819e0f.png",
     "static/media/CentraNo2-Bold.ttf": "/portfolio_recreation/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "/portfolio_recreation/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
     "static/media/CentraNo2-Book.ttf": "/portfolio_recreation/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
@@ -32,12 +34,12 @@
     "static/media/rest_api.svg": "/portfolio_recreation/static/media/rest_api.d4b2a443fb6f7ff7e4f807bfcefbe478.svg",
     "static/media/css.svg": "/portfolio_recreation/static/media/css.315b8fdb9dbf75ae965b80bf368895cd.svg",
     "static/media/html.svg": "/portfolio_recreation/static/media/html.0107c93943a8f415b5db64ebb0a9d12d.svg",
-    "main.3ede87d4.css.map": "/portfolio_recreation/static/css/main.3ede87d4.css.map",
-    "main.2d0b8445.js.map": "/portfolio_recreation/static/js/main.2d0b8445.js.map",
+    "main.3078eb07.css.map": "/portfolio_recreation/static/css/main.3078eb07.css.map",
+    "main.38542536.js.map": "/portfolio_recreation/static/js/main.38542536.js.map",
     "787.28cb0dcd.chunk.js.map": "/portfolio_recreation/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3ede87d4.css",
-    "static/js/main.2d0b8445.js"
+    "static/css/main.3078eb07.css",
+    "static/js/main.38542536.js"
   ]
 }
