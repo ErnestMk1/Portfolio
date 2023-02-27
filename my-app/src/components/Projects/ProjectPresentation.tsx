@@ -3,8 +3,12 @@ import ComingSoon from "./ProjectPresentation/ComingSoon";
 import GreatChange from "./ProjectPresentation/GreatChange";
 import Navigation from "./ProjectPresentation/Navigation";
 import TodoApp from "./ProjectPresentation/TodoApp";
+import { useLayoutEffect } from "react";
 
 const ProjectPresentation = () => {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+  });
   const { id } = useParams();
 
   if (Number(id) === 1) {

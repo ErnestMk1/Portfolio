@@ -12,7 +12,8 @@ const GreatChange = () => {
           className="info-img"
         />
         <p className="info-description">
-          This project is actually named after the church in Ukraine “Велика Переміна” which translates as “Great Change”. So, this is a casual one-page web application with registration for the refugees and was made only with one goal. Later our team decided to make a whole website with a bunch of cool stuff. For now, only one page is ready but in near future, it would be much greater!{")"}
+          This project is actually named after the church in Ukraine “Велика Переміна” which translates as “Great Change”. So, this is a casual one-page web application with registration for the refugees and was made only with one goal. Later our team decided to make a whole website with a bunch of cool stuff. For now, only one page is ready but in near future, it would be much greater!{")"}<br></br><br></br>
+          <b><i>P.S. You can scope images by hovering on them.</i></b>
         </p>
       </div>
 

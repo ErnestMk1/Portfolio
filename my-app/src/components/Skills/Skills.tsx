@@ -107,6 +107,7 @@ const Skills = () => {
                     <h5>MySql</h5>
                   </div>
                 </div>
+                <div className="item"></div>
               </Carousel>
             </div>
           </Col>

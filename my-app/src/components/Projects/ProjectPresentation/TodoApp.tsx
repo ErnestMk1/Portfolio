@@ -12,8 +12,8 @@ const TodoApp = () => {
           className="info-img"
         />
         <p className="info-description">
-        When you look at this to-do app you’ll notice its primitive design and realization. But actually creating apps like this one is helping a lot to understand deeper concepts of React and React Hooks. It was not that hard to build it but at some point, I was really stuck. If you click the DEMO link and then the “delete” icon you’ll notice an interesting effect. Well, that was really hard to implement for me, but then I figured that out{")"} Feel free to explore!
-
+        When you look at this to-do app you’ll notice its primitive design and realization. But actually creating apps like this one is helping a lot to understand deeper concepts of React and React Hooks. It was not that hard to build it but at some point, I was really stuck. If you click the DEMO link and then the “delete” icon you’ll notice an interesting effect. Well, that was really hard to implement for me, but then I figured that out{")"} Feel free to explore!<br></br><br></br>
+        <b><i>P.S. You can scope an image by hovering on it.</i></b>
         </p>
       </div>
 

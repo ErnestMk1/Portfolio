@@ -1,6 +1,8 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import {
+  Container,
+  Nav,
+  Navbar,
+} from 'react-bootstrap'
 import { useState } from 'react';
 import { useEffect } from 'react';
 import logo from '../../images/logo.png';
@@ -24,7 +26,7 @@ const NavBar = () => {
 
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
-      <Container>
+      <Container className="nav-container">
         <Navbar.Brand href="#home">
           <img
             src={logo}
@@ -32,10 +34,7 @@ const NavBar = () => {
             className="logo_img"
           />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav">
-          <span className="navbar-toggler-icon"></span>
-        </Navbar.Toggle>
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link
               href="#home"
@@ -90,7 +89,7 @@ const NavBar = () => {
               Let's Connect
             </Nav.Link>
           </span>
-        </Navbar.Collapse>
+        </Navbar>
       </Container>
     </Navbar>
   );

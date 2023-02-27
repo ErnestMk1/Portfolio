@@ -5,68 +5,38 @@ import './Contact.css';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
-  const formRef = useRef();
-
-  // const sendEmail = (e: any) => {
-  //   e.preventDefault();
-
-  //   emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formRef.current, 'YOUR_PUBLIC_KEY')
-  //     .then((result) => {
-  //         console.log(result.text);
-  //     }, (error) => {
-  //         console.log(error.text);
-  //     });
-  // };
-
   const formInitialDetails = {
-    firstName: '',
-    lastName: '',
+    fullName: '',
     email: '',
     phoneNumber: '',
     message: '',
   };
-  const initialStatus = { msg: '', success: false };
-  const statusText = useRef<HTMLParagraphElement>(null);
 
   const [formDetails, setFormDetails] = useState(formInitialDetails);
-  const [buttonText, setButtonText] = useState('Send');
-  const [status, setStatus] = useState(initialStatus);
+  const [result, showResult] = useState(false);
+  const form = useRef<HTMLFormElement | any>();
+
+  const sendEmail = (e: any) => {
+    e.preventDefault();
+    console.log(typeof form.current, form.current);
+    console.log(typeof e.target, e.target);
+
+    emailjs.sendForm('service_q2d09uk', 'template_tgs7wdn', form.current, 'VWRr5vOngFNkyapiJ')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+    setFormDetails(formInitialDetails);
+    showResult(true);
+  };
 
   const onFormUpdate = (toChange: string, value: string) => {
     setFormDetails({
       ...formDetails,
       [toChange]: value,
     });
-  };
-
-  const handleSubmit = async (e: any) => {
-    e.preventDefault();
-    setButtonText('Sending...');
-    console.log(statusText.current?.classList);
-
-    await fetch('http://localhost:3000/contact', {
-      method: "POST",
-      headers: {
-        "Content-Type": "Application/json;charset=utf-8",
-      },
-      body: JSON.stringify(formDetails),
-    }).then(() => {
-      if (formDetails.message !== '' &&
-          formDetails.firstName !== '' &&
-          formDetails.lastName !== '' &&
-          formDetails.email !== '') {
-
-        setStatus({ success: true, msg: "Your message has been sent. Thx for contacting!)" });
-      } else {
-        setStatus({success: false, msg: "Please fill in the form" })
-      }
-    }).catch(() => {
-      setStatus({ success: false, msg: "Something went wrong..." })
-    });
-
-    statusText.current?.classList.add("appear");
-    setButtonText("Send");
-    setFormDetails(formInitialDetails);
   };
 
   return (
@@ -77,38 +47,34 @@ const Contact = () => {
         </div>
         <div className="contact-form_block">
           <h2>Get In Touch</h2>
-          <form>
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+          >
             <Row>
               <Col sm={6} className="px-1">
                 <input
                   type="text"
-                  value={formDetails.firstName}
-                  onChange={(e) => onFormUpdate('firstName', e.target.value)}
-                  placeholder="First Name"
+                  value={formDetails.fullName}
+                  onChange={(e) => onFormUpdate('fullName', e.target.value)}
+                  placeholder="Full Name"
+                  name="from_name"
+                  required
                 />
-              </Col>
-              <Col sm={6} className="px-1">
-                <input
-                  type="text"
-                  value={formDetails.lastName}
-                  onChange={(e) => onFormUpdate('lastName', e.target.value)}
-                  placeholder="Last Name"
-                />
-              </Col>
-              <Col sm={6} className="px-1">
                 <input
                   type="tel"
                   value={formDetails.phoneNumber}
                   onChange={(e) => onFormUpdate('phoneNumber', e.target.value)}
                   placeholder="Phone Number"
+                  name="phone"
                 />
-              </Col>
-              <Col sm={6} className="px-1">
                 <input
                   type="email"
                   value={formDetails.email}
                   onChange={(e) => onFormUpdate('email', e.target.value)}
                   placeholder="Email"
+                  name="email"
+                  required
                 />
               </Col>
               <Col sm={6} className="px-1 text_btn_box">
@@ -118,13 +84,15 @@ const Contact = () => {
                   value={formDetails.message}
                   onChange={(e) => onFormUpdate('message', e.target.value)}
                   placeholder="Message"
+                  name="message"
+                  required
                 ></textarea>
-                <button onClick={handleSubmit}>{buttonText}</button>
               </Col>
               <Col>
-                <p className="status_message" ref={statusText}>{status.msg}</p>
+                <p className="status_message">{result ? "Thank you for contacting! I'll reply as soon as possible)" : ''}</p>
               </Col>
             </Row>
+            <button type="submit">Send</button>
           </form>
         </div>
       </div>

@@ -16,6 +16,12 @@
   margin-right: 5vw;
 }
 
+.contact-form_block form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .contact img {
   width: 92%;
 }
@@ -54,13 +60,13 @@
   font-weight: 700;
   color: #000;
   background-color: #FFF;
-  padding: 14px 48px;
-  font-size: 18px;
-  margin-top: 25px;
-  border-radius: 20px;
+  padding: .8rem 3rem;
+  font-size: 1.2rem;
+  border-radius: 1.2rem;
   position: relative;
   border: 1px solid rgba(255, 255, 255, 0.5);
   transition: 0.3s ease-in-out;
+  margin-right: 22vw;
 }
 
 .contact form button:hover {
@@ -75,11 +81,6 @@
 .status_message {
   font-size: 1.5rem;
   font-weight: 700;
-  opacity: 0;
-  transition: opacity .4s;
-}
-
-.appear {
   opacity: .8;
 }
 

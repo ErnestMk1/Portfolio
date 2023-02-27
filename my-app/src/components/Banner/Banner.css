@@ -93,7 +93,14 @@
   border-right: 0.05em solid rgb(255, 255, 255);
 }
 
-@media only screen and (max-width: 750px) {
+@media (orientation: portrait) and (max-width: 750px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   .banner_box {
     display: flex;
     flex-direction: column;
@@ -114,17 +121,7 @@
   }
 }
 
-@media (min-width: 310px) and (max-width: 370px) {
-  .banner {
-    height: 100%;
-  }
-
-  .banner h1 {
-    font-size: 1.5em;
-  }
-}
-
-@media (min-width: 750px) and (max-width: 100px) {
+@media (orientation: portrait) and (min-width: 750px) and (max-width: 1000px) {
   .banner h1 {
     font-size: 1.8em;
   }
