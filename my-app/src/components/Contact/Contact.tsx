@@ -51,7 +51,7 @@ const Contact = () => {
             ref={form}
             onSubmit={sendEmail}
           >
-            <Row>
+            <Row className="inputs-block">
               <Col sm={6} className="px-1">
                 <input
                   type="text"

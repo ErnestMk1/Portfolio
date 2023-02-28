@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <Container className="container_footer">
-        <Row className="align-item-center">
+        <Row className="align-item-center footerRow">
           <Col className="logo_block" sm={6}>
             <img
               src={logo}
@@ -18,27 +18,27 @@ const Footer = () => {
             />
           </Col>
           <Col sm={6} className="text-center text-sm-end">
-            <div className="social-icon">
+            <div className="social-icons">
               <a
                 href="https://www.linkedin.com/in/ernest-myrmyr-14b664255/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={navIcon1} alt="" />
+                <img src={navIcon1} alt="linkedin logo-link" />
               </a>
               <a
                 href="mailto:ernmyr434@gmail.com"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img alt="" src={navIcon2} />
+                <img alt="gmail logo-link" src={navIcon2} />
               </a>
               <a
                 target="_blank"
                 rel="noreferrer"
                 href="https://www.instagram.com/ernestmk12/"
               >
-                <img alt="" src={navIcon3} />
+                <img alt="instagram logo-link" src={navIcon3} />
               </a>
             </div>
           </Col>

@@ -21,7 +21,7 @@ const Navigation = () => {
   };
 
   return (
-    <div className={`navigation ${scrolled ? "scrolled" : ''}`}>
+    <div className={`navigation ${scrolled ? "scrolledProj" : ''}`}>
       <button onClick={handleBtnClick}className="navigation-button">
         <img src={arrow1} alt="go back arrow" />
         Go Back

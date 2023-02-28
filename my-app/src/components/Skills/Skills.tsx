@@ -21,6 +21,10 @@ const Skills = () => {
       breakpoint: { max: 3000, min: 1024 },
       items: 5
     },
+    tablet: {
+      breakpoint: { max: 1024, min: 464},
+      items: 4
+    },
     mobile: {
       breakpoint: { max: 464, min: 0 },
       items: 2
@@ -39,11 +43,7 @@ const Skills = () => {
                 <b>Hi, my name is Ernest!</b><br></br> I'm a junior frontend developer from Ukraine and I'd really love to work with you and implement a bunch of cool projects and features{")"}. Hope You'll find this portfolio interesting and if so, please, let me know in the contact section. And yeah, here's the list of skills that I have and used at least ones in real projects:
               </p>
 
-              <Carousel
-                responsive={responsive}
-                infinite={true}
-                className="skills-slider"
-              >
+              <Carousel responsive={responsive} className="skills-slider">
                 <div className="item">
                   <div>
                     <img src={html} alt="html"/>
@@ -107,7 +107,6 @@ const Skills = () => {
                     <h5>MySql</h5>
                   </div>
                 </div>
-                <div className="item"></div>
               </Carousel>
             </div>
           </Col>

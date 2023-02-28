@@ -3,6 +3,9 @@ import { Carousel, Container } from "react-bootstrap";
 import coming_soon from '../../images/coming_soon.png';
 import great_change from '../../images/great_change.png';
 import todo_app from '../../images/todo_app.png';
+import mobileGC from '../../images/mobileGC.jpg';
+import mobileCS from '../../images/mobileCS.jpg';
+import mobileToDo from '../../images/mobileToDo.jpg';
 import ProjectCard from "./ProjectCard";
 import TrackVisibility from "react-on-screen";
 import './Projects.css';
@@ -12,18 +15,21 @@ const projects = [
     title: 'Registration & Brand',
     description: 'Click to explore more',
     imgUrl: great_change,
+    mobileImgUrl: mobileGC,
     id: 1,
   },
   {
     title: 'Minimalistic & Useful',
     description: 'Click to explore more',
     imgUrl: todo_app,
+    mobileImgUrl: mobileToDo,
     id: 2,
   },
   {
     title: 'RESRTful API',
     description: 'Click to explore more',
     imgUrl: coming_soon,
+    mobileImgUrl: mobileCS,
     id: 3
   },
 ];

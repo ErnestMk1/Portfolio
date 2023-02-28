@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import headerImg from "../../images/DVD_logo.svg";
 import 'animate.css';
@@ -45,41 +44,30 @@ const Banner = () => {
   });
 
   return (
-    <section className='banner' id="home">
-      <Container>
-        <Row className="align-items-center">
-          <Col
-            xs={12}
-            md={6}
-            xl={7}
-          >
-            <TrackVisibility>
-            {({ isVisible }) =>
-              <div className={isVisible ? 'animate__animated animate__pulse banner_box' : 'banner_box'}>
-                <span className="tagline">
-                  Welcome to my Portfolio
-                </span>
-                <h1>
-                  {`Hi, I'm `}<span className="wrap">{text}</span>
-                </h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, corrupti.</p>
-                <button className="LetsConnectbtn"><a href="#connect">Let's Connect <ArrowRightCircle size={25}/></a></button>
-              </div>
-            }
-            </TrackVisibility>
-          </Col>
+    <div className="banner" id="home">
+      <div className="banner-container">
+        <div className="welcome-block">
+          <TrackVisibility>
+          {({ isVisible }) =>
+            <div className={isVisible ? 'animate__animated animate__pulse banner_box' : 'banner_box'}>
+              <span className="tagline">
+                Welcome to my Portfolio
+              </span>
+              <h1>
+                {`Hi, I'm `}<span className="wrap">{text}</span>
+              </h1>
+              <p>Hello! I'm really glad you're here! My name's Ernest and I'm 19. I like to code and play guitar{")"}</p>
+              <button className="LetsConnectbtn"><a href="#connect">Let's Connect <ArrowRightCircle size={25}/></a></button>
+            </div>
+          }
+          </TrackVisibility>
+        </div>
 
-          <Col
-            xs={12}
-            md={6}
-            xl={5}
-            className="header-img-div"
-          >
-            <img src={headerImg} alt="Header Img" />
-          </Col>
-        </Row>
-      </Container>
-    </section>
+        <div className="header-img-div">
+          <img src={headerImg} alt="Header Img" />
+        </div>
+      </div>
+    </div>
   );
 };
 

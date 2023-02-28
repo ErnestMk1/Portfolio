@@ -26,3 +26,10 @@
     margin-top: 3vh;
   }
 }
+
+@media (orientation: landscape) and (min-width: 550px) and (max-width: 600px) {
+  .footerRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

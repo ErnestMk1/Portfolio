@@ -1,8 +1,3 @@
-import {
-  Container,
-  Nav,
-  Navbar,
-} from 'react-bootstrap'
 import { useState } from 'react';
 import { useEffect } from 'react';
 import logo from '../../images/logo.png';
@@ -25,73 +20,69 @@ const NavBar = () => {
   }, [setScroll]);
 
   return (
-    <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
-      <Container className="nav-container">
-        <Navbar.Brand href="#home">
-          <img
-            src={logo}
-            alt="logo img"
-            className="logo_img"
-          />
-        </Navbar.Brand>
-        <Navbar id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link
-              href="#home"
-              className={activeLink === 'home' ? 'active navbar-link': "navbar-link"}
-              onClick={() => setActiveLink('home')}
-            >
-              Home
-            </Nav.Link>
-            <Nav.Link
-              href="#skills"
-              className={activeLink === 'skills' ? 'active navbar-link': "navbar-link"}
-              onClick={() => setActiveLink('skills')}
-            >
-              Skills
-            </Nav.Link>
-            <Nav.Link
-              href="#projects"
-              className={activeLink === 'projects' ? 'active navbar-link': "navbar-link"}
-              onClick={() => setActiveLink('projects')}
-            >
-              Projects
-            </Nav.Link>
-          </Nav>
-          <span className='navbar-text'>
-            <div className="social-icon">
-              <a
-                href="https://www.linkedin.com/in/ernest-myrmyr-14b664255/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={navIcon1} alt="" />
-              </a>
-              <a
-                href="mailto:ernmyr434@gmail.com"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img alt="" src={navIcon2} />
-              </a>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://www.instagram.com/ernestmk12/"
-              >
-                <img alt="" src={navIcon3} />
-              </a>
-            </div>
-            <Nav.Link
-              href="#connect"
-              className='button_link'
-            >
-              Let's Connect
-            </Nav.Link>
-          </span>
-        </Navbar>
-      </Container>
-    </Navbar>
+    <div className={scrolled ? "main-nav_div scrolled" : "main-nav_div"}>
+      <div className="nav-logo_container">
+        <img
+          src={logo}
+          alt="logo img"
+          className="logo_img"
+        />
+      </div>
+      <div className="nav-links_block">
+        <a
+          href="#home"
+          className={activeLink === 'home' ? 'active navbar-link': "navbar-link"}
+          onClick={() => setActiveLink('home')}
+        >
+          Home
+        </a>
+        <a
+          href="#skills"
+          className={activeLink === 'skills' ? 'active navbar-link': "navbar-link"}
+          onClick={() => setActiveLink('skills')}
+        >
+          Skills
+        </a>
+        <a
+          href="#projects"
+          className={activeLink === 'projects' ? 'active navbar-link': "navbar-link"}
+          onClick={() => setActiveLink('projects')}
+        >
+          Projects
+        </a>
+      </div>
+      <div className="social-media_block">
+        <div className="social-icons">
+          <a
+            href="https://www.linkedin.com/in/ernest-myrmyr-14b664255/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={navIcon1} alt="linkedin logo-link" />
+          </a>
+          <a
+            href="mailto:ernmyr434@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img alt="gmail logo-link" src={navIcon2} />
+          </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.instagram.com/ernestmk12/"
+          >
+            <img alt="instagram logo-link" src={navIcon3} />
+          </a>
+        </div>
+        <a
+          href="#connect"
+          className='button_link'
+        >
+          Let's Connect
+        </a>
+      </div>
+    </div>
   );
 };
 
