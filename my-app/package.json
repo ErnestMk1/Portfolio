@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://ErnestMk1.github.io/portfolio_recreation",
+  "homepage": "https://ernestsportfolio.netlify.app/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
