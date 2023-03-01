@@ -17,7 +17,7 @@ const GreatChange = () => {
         </p>
       </div>
 
-      <div className="info-block">
+      <div className="info-block info_block2">
         <p className="info-description">
           Here you can see a screenshot of a registration page. In 2021 I made a similar project but with the difference of connecting it to google sheets. Now I’ve decided to improve my skills and connected the registration section to the MySQL database because we are expecting a big amount of people who will use this site
         </p>

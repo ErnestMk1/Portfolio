@@ -40,7 +40,7 @@ const Skills = () => {
               <h2 className="skills_caption">Skills</h2>
 
               <p>
-                <b>Hi, my name is Ernest!</b><br></br> I'm a junior frontend developer from Ukraine and I'd really love to work with you and implement a bunch of cool projects and features{")"}. Hope You'll find this portfolio interesting and if so, please, let me know in the contact section. And yeah, here's the list of skills that I have and used at least ones in real projects:
+                <b className="skill_bald-text">Hi, my name is Ernest!</b><br></br> I'm a junior frontend developer from Ukraine and I'd really love to work with you and implement a bunch of cool projects and features{")"}. Hope You'll find this portfolio interesting and if so, please, let me know in the contact section. And yeah, here's the list of skills that I have and used at least ones in real projects:
               </p>
 
               <Carousel responsive={responsive} className="skills-slider">
