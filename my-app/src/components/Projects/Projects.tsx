@@ -1,10 +1,10 @@
 import { useNavigate, generatePath } from "react-router-dom";
 import { Carousel, Container } from "react-bootstrap";
-import coming_soon from '../../images/coming_soon.png';
 import great_change from '../../images/great_change.png';
 import todo_app from '../../images/todo_app.png';
+import movie_finder_1 from '../../images/movie_finder_1.jpg';
 import mobileGC from '../../images/mobileGC.jpg';
-import mobileCS from '../../images/mobileCS.jpg';
+import movie_finder_phone from '../../images/movie_finder_phone.jpg';
 import mobileToDo from '../../images/mobileToDo.jpg';
 import ProjectCard from "./ProjectCard";
 import TrackVisibility from "react-on-screen";
@@ -19,17 +19,17 @@ const projects = [
     id: 1,
   },
   {
+    title: 'RESRTful API',
+    description: 'Click to explore more',
+    imgUrl: movie_finder_1,
+    mobileImgUrl: movie_finder_phone,
+    id: 2,
+  },
+  {
     title: 'Minimalistic & Useful',
     description: 'Click to explore more',
     imgUrl: todo_app,
     mobileImgUrl: mobileToDo,
-    id: 2,
-  },
-  {
-    title: 'RESRTful API',
-    description: 'Click to explore more',
-    imgUrl: coming_soon,
-    mobileImgUrl: mobileCS,
     id: 3
   },
 ];

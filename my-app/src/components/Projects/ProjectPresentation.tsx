@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
-import ComingSoon from "./ProjectPresentation/ComingSoon";
 import GreatChange from "./ProjectPresentation/GreatChange";
 import Navigation from "./ProjectPresentation/Navigation";
+import MovieFinder from "./ProjectPresentation/MovieFinder";
 import TodoApp from "./ProjectPresentation/TodoApp";
 import { useLayoutEffect } from "react";
 
@@ -22,14 +22,14 @@ const ProjectPresentation = () => {
     return (
       <>
         <Navigation />
-        <TodoApp />
+        <MovieFinder />
       </>
     );
   } else if (Number(id) === 3) {
     return (
       <>
         <Navigation />
-        <ComingSoon />
+        <TodoApp />
       </>
     );
   };

@@ -17,14 +17,14 @@ const TodoApp = () => {
         </p>
       </div>
 
-      <div className="technologies-block">
+      <div className="technologies-block techno_block_TL">
         <h2>Apllied Technologies:</h2>
         <ul className="technologies-list">
           <li>
-            <b>React</b> - well-known front-end JavaScript library which I often use for alike projects;
+            <b>React</b>
           </li>
           <li>
-            <b>Typescript</b> - also very popular programming language and in this project, as almost in every since I learnt it, was used;
+            <b>Typescript</b>
           </li>
         </ul>
       </div>
